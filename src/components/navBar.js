@@ -2,11 +2,11 @@ import React from 'react';
 import { Nav,Navbar,Container, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 export const NavBar = () =>{
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar className="navbar" expand="lg">
             <Container className = "flex space-between">
                 <div>
-   
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+
+                <Navbar.Brand href="#home">chao-Bootstrap</Navbar.Brand>
 
                 </div>
                 <div>
@@ -24,7 +24,7 @@ export const NavBar = () =>{
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
-                </div>    
+                </div>
             </Container>
         </Navbar>
         )

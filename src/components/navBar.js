@@ -5,6 +5,7 @@ export const NavBar = () =>{
         <Navbar bg="light" expand="lg">
             <Container className = "flex space-between">
                 <div>
+   
                 <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
 
                 </div>

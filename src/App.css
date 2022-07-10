@@ -37,3 +37,12 @@
     transform: rotate(360deg);
   }
 }
+.navbar{
+  background-color: #79DAE8;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}

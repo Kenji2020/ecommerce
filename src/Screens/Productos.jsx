@@ -4,14 +4,13 @@ import Producto from '../components/Producto'
 import { Container, Row } from 'react-bootstrap'
 import Display from '../components/Display'
 import "../App.css"
-export const Productos = () => {
+export const Productos = ({productos, productoCarrito, setProductosCarrito}) => {
 
-    const productos = ["caca", "caca1", "caca2","caca3","producto","rosario","te","simpeo"]
 
   return (
     <>
         <Container className="mt-5">
-            <Display data={productos}/>
+            <Display data={productos}productoCarrito={productoCarrito} setProductosCarrito={setProductosCarrito} />
         </Container>
 
     </>

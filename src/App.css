@@ -63,5 +63,12 @@
     width: 400px;
     height: 400px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 5rem;
+}
+.ImagenMini{
+  width: 70%;
+}
+.ImagenMedia{
+  width: 100%;
+  height: 10rem;
 }

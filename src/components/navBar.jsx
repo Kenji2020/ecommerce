@@ -3,8 +3,11 @@ import { Nav,Navbar,Container, NavDropdown, Form, FormControl, Button } from 're
 export const NavBar = () =>{
     return (
         <Navbar className="navbar" expand="lg">
-            <Container>
-                <Navbar.Brand href="#home">React alo -Bootstrap</Navbar.Brand>
+            <Container className= "flex space-between">
+                <div>
+                    <Navbar.Brand href="#home">React alo -Bootstrap</Navbar.Brand>
+                </div>
+                <div>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>
@@ -19,6 +22,8 @@ export const NavBar = () =>{
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
+
+                </div>
             </Container>
         </Navbar>
         )

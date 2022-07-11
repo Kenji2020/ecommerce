@@ -4,6 +4,7 @@ import {NavBar} from './components/navBar';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import {Carrito} from './Screens/Carrito';
 import {Inicio} from './Screens/Inicio';
+import { Productos } from './Screens/Productos';
 function App() {
   return (
       <>
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Inicio/>}/>
           <Route path="/Inicio" element={<Inicio/>}/>
           <Route path="/Carrito" element={<Carrito/>}/>
+          <Route path="/Productos" element={<Productos/>}/>
         </Routes>
       </>
         

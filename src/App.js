@@ -6,6 +6,9 @@ import {Carrito} from './Screens/Carrito';
 import {Inicio} from './Screens/Inicio';
 import {Productos} from './Screens/Productos';
 function App() {
+
+  console.log(".")
+
   return (
       <>
         <NavBar/>

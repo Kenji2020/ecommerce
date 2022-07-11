@@ -6,7 +6,7 @@ export const NavBar = () =>{
     const verifyIfLogged = () =>{
         if(sesion){
             return <NavDropdown title="Usuario" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Perfil</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">Perfilazo</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2"onClick={()=> setSesion(!sesion)}>Cerrar Sesion</NavDropdown.Item>
             </NavDropdown>
         }else{

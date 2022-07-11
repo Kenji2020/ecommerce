@@ -2,25 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavBar} from './components/navBar';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import {Carrito} from './Screens/Carrito';
+import {Inicio} from './Screens/Inicio';
 function App() {
   return (
-    <div className="App">
-    <NavBar/>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          HOLA UWU <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Inicio/>}/>
+          <Route path="/Inicio" element={<Inicio/>}/>
+          <Route path="/Carrito" element={<Carrito/>}/>
+
+        </Routes>
+      </BrowserRouter>
   );
 }
 

@@ -18,7 +18,7 @@ export const NavBar = () =>{
     }
 
     return (
-        <Navbar className="navbar" expand="lg">
+        <Navbar className="navbar w-100" expand="lg">
             <Container className= "flex space-between">
                 <div>
                     <Navbar.Brand href="/">Home</Navbar.Brand>

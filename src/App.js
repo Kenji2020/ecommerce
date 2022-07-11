@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavBar} from './components/navBar';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import {Carrito} from './Screens/Carrito';
-import {Inicio} from './Screens/Inicio';
+import {Inicio} from './Screens/inicio/Inicio';
 import {Productos} from './Screens/Productos';
 function App() {
   return (

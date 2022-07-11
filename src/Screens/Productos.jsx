@@ -6,7 +6,7 @@ import Display from '../components/Display'
 import "../App.css"
 export const Productos = () => {
 
-    const productos = ["caca", "caca1", "caca2","caca3","producto","rosario","te","amo"]
+    const productos = ["caca", "caca1", "caca2","caca3","producto","rosario","te","odio"]
 
   return (
     <>

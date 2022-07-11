@@ -30,8 +30,6 @@ export const NavBar = () =>{
                         <Nav.Link href="/productos" className="navbar-nav">Productos</Nav.Link>
                         <Nav.Link href="/compras">Compras</Nav.Link>
                         <NavDropdown title="Opciones" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Cargando...</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Cargando...</NavDropdown.Item>
                             <NavDropdown.Item/>
                             {verifyIfLogged()}
                             <NavDropdown.Item/>

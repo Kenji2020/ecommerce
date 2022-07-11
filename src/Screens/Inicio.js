@@ -11,23 +11,19 @@ export const Inicio = () => {
     const mapMascotas = [comidaPerro, juguetePerro, comidaGato, jugueteGato]
     return (
     <div className="inicio">
-
         <>
             <Fragment>
-
                 <MediaQuery minDeviceWidth={1224}>
                     <img src={images} className="w-100" alt=""/>
                     <p className="Letras">
                         Encuentra los productos ideales para tus mascotas aquí en mascotás uwu.
                     </p>
-
                     <p>
                         {mapMascotas.map((mascota, index) => {
                             return (
                                 <img src={mascota} className="Imagen" alt="" key={index}/>
                             )
                         })}
-
                     </p>
                 </MediaQuery>
                 <MediaQuery maxDeviceWidth={1224}>

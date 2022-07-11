@@ -1,8 +1,17 @@
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-
+import {db} from '../firebase'
 const Producto = ({name}) => {
-  return (
+const addCarrito = ()   =>{
+    db.collection('Carrito').add({
+        name: name,
+        cantidad: 1,
+        precio: 1
+    }).then(r => {
+        console.log(r)
+    })
+    }
+    return (
     <Card style={{ width: '18rem', margin: "1rem" }}>
       <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
       <Card.Body>
@@ -17,8 +26,8 @@ const Producto = ({name}) => {
         <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
       </ListGroup>
       <Card.Body>
-        <Card.Link href="#">Card Link</Card.Link>
         <Card.Link href="#">Another Link</Card.Link>
+          <button className="btn btn-primary" onClick={()=>{addCarrito()}}>Agregar al carrito</button>
       </Card.Body>
     </Card>
   );

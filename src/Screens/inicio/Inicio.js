@@ -11,7 +11,7 @@ export const Inicio = () => {
     <div className="inicio">
         <img src={images} className='w-100' alt=""/>
       <p className="Letras">
-        Encuentra los productos iadeales para tus mascotas aquí en mascotás uwu.
+        Encuentra los productosa iadeales para tus mascotas aquí en mascotás uwu.
         </p>
 
         <div className="d-flex justify-content-around">

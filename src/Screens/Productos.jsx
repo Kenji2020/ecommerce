@@ -13,7 +13,7 @@ export const Productos = () => {
         <Container className="mt-5">
             <Display data={productos}/>
         </Container>
-    
+
     </>
   )
 }

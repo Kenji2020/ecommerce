@@ -4,11 +4,11 @@ import {NavBar} from './components/navBar';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import {Carrito} from './Screens/Carrito';
 import {Inicio} from './Screens/Inicio';
-import { Productos } from './Screens/Productos';
+import {Productos} from './Screens/Productos';
 function App() {
   return (
       <>
-        <NavBar/>	
+        <NavBar/>
         <Routes>
           <Route path="/" element={<Inicio/>}/>
           <Route path="/Inicio" element={<Inicio/>}/>
@@ -16,7 +16,7 @@ function App() {
           <Route path="/Productos" element={<Productos/>}/>
         </Routes>
       </>
-        
+
   );
 }
 

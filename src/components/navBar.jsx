@@ -21,14 +21,14 @@ export const NavBar = () =>{
         <Navbar className="navbar" expand="lg">
             <Container className= "flex space-between">
                 <div>
-                    <Navbar.Brand href="#home">Home</Navbar.Brand>
+                    <Navbar.Brand href="/">Home</Navbar.Brand>
                 </div>
                 <div>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>
-                        <Nav.Link href="#home" className="navbar-nav">Productos</Nav.Link>
-                        <Nav.Link href="#link">Compras</Nav.Link>
+                        <Nav.Link href="/productos" className="navbar-nav">Productos</Nav.Link>
+                        <Nav.Link href="/compras">Compras</Nav.Link>
                         <NavDropdown title="Opciones" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Cargando...</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Cargando...</NavDropdown.Item>

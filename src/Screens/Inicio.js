@@ -7,7 +7,8 @@ import juguetePerro from '../img/downlakjsdjsdoad-removebg-preview.png'
 import comidaGato from '../img/download-removebg-preview.png'
 import jugueteGato from '../img/61R6XXycJqL._AC_SX466_-removebg-preview.png'
 import {BrowserView, MobileView, isMobile} from 'react-device-detect';
-export const Inicio = () => {
+import { Carousel } from 'react-bootstrap';
+export const Inicio = ({productos}) => {
     const mapMascotas = [comidaPerro, juguetePerro, comidaGato, jugueteGato]
     return (
     <div className="inicio">
@@ -27,7 +28,28 @@ export const Inicio = () => {
                     </p>
                 </MediaQuery>
                 <MediaQuery maxDeviceWidth={1224}>
-                    <div>Resolución de teléfono próximamente</div>
+                    {/* <div>Resolución de teléfono próximamente</div> */}
+                    <img src={images} className="ImagenMedia" alt=""/>
+                    <div className=" container d-flex text-center">
+                    {
+                        productos.map((producto, index) => (
+                            <img src={producto} className="w-100" key={index}/>
+                        ))
+                    }
+
+                    </div>
+
+                    <Carousel className="text-center">
+                        {mapMascotas.map((mascota, index) => {
+                            return (
+                                    <Carousel.Item>
+                                        <img className="ImagenMini"
+                                        src={mascota} 
+                                        alt="mascota"/>
+                                    </Carousel.Item>
+                            )
+                        })}
+                    </Carousel>
                 </MediaQuery>
 
             </Fragment>

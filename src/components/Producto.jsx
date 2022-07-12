@@ -1,8 +1,10 @@
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import {db} from '../firebase'
+
+
 const Producto = ({name}) => {
-const addCarrito = ()   =>{
+const addCarrito = ({setProductosCarrito})   =>{
     db.collection('Carrito').add({
         name: name,
         cantidad: 1,
